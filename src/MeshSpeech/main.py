@@ -168,7 +168,7 @@ while True:
                         target_id = n["num"]
             if target_id != -1:
                 try:
-                    iface.sendText(message, destinationId=4204789392)
+                    iface.sendText(message, destinationId=target_id)
                     add_debug_line(f"{iface.getMyNodeInfo()['user']['shortName']}> {message}")
                     message_input_textbox.update("")
                 except Exception as e:
